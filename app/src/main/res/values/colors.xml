@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="primary_color">#39393b</color>
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="primary_dark_color">#000821</color>
+
+    <!-- Background color for app -->
+    <color name="tan_background">#FFF7DA</color>
+
+    <!-- Background color for the numbers category -->
+    <color name="category_emacs">#172d38</color>
+
+    <!-- Text color for the function item -->
+    <color name="function_item">@color/category_emacs</color>
+
+    <!-- Color white -->
+    <color name="color_white">#FFFFFF</color>
+
+    <!-- Color text command -->
+    <color name="command_background">#767474</color>
+
+    <color name="function_background">#bebebe</color>
+
+</resources>

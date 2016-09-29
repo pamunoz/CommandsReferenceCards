@@ -14,11 +14,12 @@ import java.util.ArrayList;
  */
 public class EmacsFragment extends Fragment {
 
-    private String[] emacsSections;
-    private String[] emacsCommands;
-    private String[] emacsFunctions;
-    private ArrayList<Command> commands;
-    private int[] indices;
+    private String[] mSections;
+    private String[] mCommands;
+    private String[] mFunctions;
+    private ArrayList<Command> mCommandsList;
+    private int[] mSectionsIndices;
+    private int mColorResourceId;
 
     public EmacsFragment() {
         // Required empty public constructor
@@ -30,18 +31,19 @@ public class EmacsFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.command_list, container, false);
 
-        emacsSections = getResources().getStringArray(R.array.emacs_section_titles);
-        emacsCommands = getResources().getStringArray(R.array.emacs_commands);
-        emacsFunctions = getResources().getStringArray(R.array.emacs_functions);
-        indices = getResources().getIntArray(R.array.section_indices);
-        commands = new ArrayList<>();
+        mSections = getResources().getStringArray(R.array.emacs_section_titles);
+        mCommands = getResources().getStringArray(R.array.emacs_commands);
+        mFunctions = getResources().getStringArray(R.array.emacs_functions);
+        mSectionsIndices = getResources().getIntArray(R.array.section_indices);
+        mCommandsList = new ArrayList<>();
+        mColorResourceId = R.color.category_emacs;
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
         /** Add the commands to the ArrayList adding sections titles */
         addCommand();
 
-        CommandAdapter adapter = new CommandAdapter(getActivity(), commands, R.color.category_emacs);
+        CommandAdapter adapter = new CommandAdapter(getActivity(), mCommandsList, mColorResourceId);
 
         listView.setAdapter(adapter);
 
@@ -54,16 +56,18 @@ public class EmacsFragment extends Fragment {
     }
 
     private void addCommand() {
-
-        if (emacsCommands.length == emacsFunctions.length) {
+        // don't add elements to the arraylist if functions and its command don't have the same length
+        if (mCommands.length == mFunctions.length) {
 
             int j = 0;
-            for (int i = 0; i < emacsCommands.length; i++) {
-                if (i == 0 || i == 1 || i == 3 || i == 9 || i == 16 || i == 21 || i == 31 ||
-                    i == 47 || i == 58 || i == 66 || i == 75 || i == 90 || i == 103 || i == 109) {
-                    commands.add(new Command(emacsCommands[i], emacsFunctions[i], emacsSections[j++]));
+            for (int i = 0; i < mCommands.length; i++) {
+                if (j < mSectionsIndices.length  && i == mSectionsIndices[j]) {
+                    mCommandsList.add(new Command(mCommands[i], mFunctions[i], mSections[j]));
+                    j++;
+                    // this line if for avoiding indices access errors for the section indices
+                    if (j == mSectionsIndices.length) j+= mSectionsIndices.length;
                 } else {
-                    commands.add(new Command(emacsCommands[i], emacsFunctions[i]));
+                    mCommandsList.add(new Command(mCommands[i], mFunctions[i]));
                 }
             }
         }

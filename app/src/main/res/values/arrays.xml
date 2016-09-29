@@ -22,6 +22,17 @@
         <item>@string/case_change_sec</item>
         <item>@string/minibuffer_sec</item>
         <item>@string/buffer_sec</item>
+        <item>@string/transposing_sec</item>
+        <item>@string/spelling_sec</item>
+        <item>@string/tags_sec</item>
+        <item>@string/shells_sec</item>
+        <item>@string/rectangles_sec</item>
+        <item>@string/abbrevs_sec</item>
+        <item>@string/regular_expressions_sec</item>
+        <item>@string/registers_sec</item>
+        <item>@string/info_sec</item>
+        <item>@string/keyboard_macros_sec</item>
+        <item>@string/commands_dealing_with_emacs_lisp_sec</item>
     </string-array>
 
     <string-array name="emacs_commands">
@@ -149,7 +160,92 @@
         <item>@string/cmd_122</item>
         <item>@string/cmd_123</item>
         <item>@string/cmd_124</item>
-
+        <item>@string/cmd_125</item>
+        <item>@string/cmd_126</item>
+        <item>@string/cmd_127</item>
+        <item>@string/cmd_128</item>
+        <item>@string/cmd_129</item>
+        <item>@string/cmd_130</item>
+        <item>@string/cmd_131</item>
+        <item>@string/cmd_132</item>
+        <item>@string/cmd_133</item>
+        <item>@string/cmd_134</item>
+        <item>@string/cmd_135</item>
+        <item>@string/cmd_136</item>
+        <item>@string/cmd_137</item>
+        <item>@string/cmd_138</item>
+        <item>@string/cmd_139</item>
+        <item>@string/cmd_140</item>
+        <item>@string/cmd_141</item>
+        <item>@string/cmd_142</item>
+        <item>@string/cmd_143</item>
+        <item>@string/cmd_144</item>
+        <item>@string/cmd_145</item>
+        <item>@string/cmd_146</item>
+        <item>@string/cmd_147</item>
+        <item>@string/cmd_148</item>
+        <item>@string/cmd_149</item>
+        <item>@string/cmd_150</item>
+        <item>@string/cmd_151</item>
+        <item>@string/cmd_152</item>
+        <item>@string/cmd_153</item>
+        <item>@string/cmd_154</item>
+        <item>@string/cmd_155</item>
+        <item>@string/cmd_156</item>
+        <item>@string/cmd_157</item>
+        <item>@string/cmd_158</item>
+        <item>@string/cmd_159</item>
+        <item>@string/cmd_160</item>
+        <item>@string/cmd_161</item>
+        <item>@string/cmd_162</item>
+        <item>@string/cmd_163</item>
+        <item>@string/cmd_164</item>
+        <item>@string/cmd_165</item>
+        <item>@string/cmd_166</item>
+        <item>@string/cmd_167</item>
+        <item>@string/cmd_168</item>
+        <item>@string/cmd_169</item>
+        <item>@string/cmd_170</item>
+        <item>@string/cmd_171</item>
+        <item>@string/cmd_172</item>
+        <item>@string/cmd_173</item>
+        <item>@string/cmd_174</item>
+        <item>@string/cmd_175</item>
+        <item>@string/cmd_176</item>
+        <item>@string/cmd_177</item>
+        <item>@string/cmd_178</item>
+        <item>@string/cmd_179</item>
+        <item>@string/cmd_180</item>
+        <item>@string/cmd_181</item>
+        <item>@string/cmd_182</item>
+        <item>@string/cmd_183</item>
+        <item>@string/cmd_184</item>
+        <item>@string/cmd_185</item>
+        <item>@string/cmd_186</item>
+        <item>@string/cmd_187</item>
+        <item>@string/cmd_188</item>
+        <item>@string/cmd_189</item>
+        <item>@string/cmd_190</item>
+        <item>@string/cmd_191</item>
+        <item>@string/cmd_192</item>
+        <item>@string/cmd_193</item>
+        <item>@string/cmd_194</item>
+        <item>@string/cmd_195</item>
+        <item>@string/cmd_196</item>
+        <item>@string/cmd_197</item>
+        <item>@string/cmd_198</item>
+        <item>@string/cmd_199</item>
+        <item>@string/cmd_200</item>
+        <item>@string/cmd_201</item>
+        <item>@string/cmd_202</item>
+        <item>@string/cmd_203</item>
+        <item>@string/cmd_204</item>
+        <item>@string/cmd_205</item>
+        <item>@string/cmd_206</item>
+        <item>@string/cmd_207</item>
+        <item>@string/cmd_208</item>
+        <item>@string/cmd_209</item>
+        <item>@string/cmd_210</item>
     </string-array>
 
     <string-array name="emacs_functions">
@@ -277,7 +373,92 @@
         <item>@string/function_122</item>
         <item>@string/function_123</item>
         <item>@string/function_124</item>
-
+        <item>@string/function_125</item>
+        <item>@string/function_126</item>
+        <item>@string/function_127</item>
+        <item>@string/function_128</item>
+        <item>@string/function_129</item>
+        <item>@string/function_130</item>
+        <item>@string/function_131</item>
+        <item>@string/function_132</item>
+        <item>@string/function_133</item>
+        <item>@string/function_134</item>
+        <item>@string/function_135</item>
+        <item>@string/function_136</item>
+        <item>@string/function_137</item>
+        <item>@string/function_138</item>
+        <item>@string/function_139</item>
+        <item>@string/function_140</item>
+        <item>@string/function_141</item>
+        <item>@string/function_142</item>
+        <item>@string/function_143</item>
+        <item>@string/function_144</item>
+        <item>@string/function_145</item>
+        <item>@string/function_146</item>
+        <item>@string/function_147</item>
+        <item>@string/function_148</item>
+        <item>@string/function_149</item>
+        <item>@string/function_150</item>
+        <item>@string/function_151</item>
+        <item>@string/function_152</item>
+        <item>@string/function_153</item>
+        <item>@string/function_154</item>
+        <item>@string/function_155</item>
+        <item>@string/function_156</item>
+        <item>@string/function_157</item>
+        <item>@string/function_158</item>
+        <item>@string/function_159</item>
+        <item>@string/function_160</item>
+        <item>@string/function_161</item>
+        <item>@string/function_162</item>
+        <item>@string/function_163</item>
+        <item>@string/function_164</item>
+        <item>@string/function_165</item>
+        <item>@string/function_166</item>
+        <item>@string/function_167</item>
+        <item>@string/function_168</item>
+        <item>@string/function_169</item>
+        <item>@string/function_170</item>
+        <item>@string/function_171</item>
+        <item>@string/function_172</item>
+        <item>@string/function_173</item>
+        <item>@string/function_174</item>
+        <item>@string/function_175</item>
+        <item>@string/function_176</item>
+        <item>@string/function_177</item>
+        <item>@string/function_178</item>
+        <item>@string/function_179</item>
+        <item>@string/function_180</item>
+        <item>@string/function_181</item>
+        <item>@string/function_182</item>
+        <item>@string/function_183</item>
+        <item>@string/function_184</item>
+        <item>@string/function_185</item>
+        <item>@string/function_186</item>
+        <item>@string/function_187</item>
+        <item>@string/function_188</item>
+        <item>@string/function_189</item>
+        <item>@string/function_190</item>
+        <item>@string/function_191</item>
+        <item>@string/function_192</item>
+        <item>@string/function_193</item>
+        <item>@string/function_194</item>
+        <item>@string/function_195</item>
+        <item>@string/function_196</item>
+        <item>@string/function_197</item>
+        <item>@string/function_198</item>
+        <item>@string/function_199</item>
+        <item>@string/function_200</item>
+        <item>@string/function_201</item>
+        <item>@string/function_202</item>
+        <item>@string/function_203</item>
+        <item>@string/function_204</item>
+        <item>@string/function_205</item>
+        <item>@string/function_206</item>
+        <item>@string/function_207</item>
+        <item>@string/function_208</item>
+        <item>@string/function_209</item>
+        <item>@string/function_210</item>
     </string-array>
 
     <integer-array name="section_indices">
@@ -293,6 +474,20 @@
         <item>66</item>
         <item>75</item>
         <item>90</item>
+        <item>103</item>
+        <item>109</item>
+        <item>121</item>
+        <item>124</item>
+        <item>128</item>
+        <item>131</item>
+        <item>137</item>
+        <item>141</item>
+        <item>147</item>
+        <item>153</item>
+        <item>175</item>
+        <item>179</item>
+        <item>196</item>
+        <item>202</item>
     </integer-array>
 
 </resources>

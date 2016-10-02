@@ -9,11 +9,23 @@
     <!-- Background color for app -->
     <color name="tan_background">#FFF7DA</color>
 
-    <!-- Background color for the numbers category -->
+    <!-- Background color for the emacs category -->
     <color name="category_emacs">#172d38</color>
 
+    <!-- Background color for the linux category -->
+    <color name="category_linux">#9b1006</color>
+
+    <!-- Background color for the org-mode category -->
+    <color name="category_org_mode">#173b0d</color>
+
     <!-- Text color for the function item -->
-    <color name="function_item">@color/category_emacs</color>
+    <color name="function_item">#101010</color>
+
+    <!-- Text tab color -->
+    <color name="tab_selected_color">#ffcf2c</color>
+
+    <!-- Tab indicator color -->
+    <color name="tab_indicator_color">#3985a1</color>
 
     <!-- Color white -->
     <color name="color_white">#FFFFFF</color>

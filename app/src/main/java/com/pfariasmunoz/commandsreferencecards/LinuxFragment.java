@@ -1,19 +1,20 @@
 package com.pfariasmunoz.commandsreferencecards;
 
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class EmacsFragment extends Fragment {
+public class LinuxFragment extends Fragment {
 
     private String[] mSections;
     private String[] mCommands;
@@ -22,22 +23,22 @@ public class EmacsFragment extends Fragment {
     private int[] mSectionsIndices;
     private int mColorResourceId;
 
-    public EmacsFragment() {
+    public LinuxFragment() {
         // Required empty public constructor
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         View rootView = inflater.inflate(R.layout.command_list, container, false);
 
-        mSections = getResources().getStringArray(R.array.emacs_section_titles);
-        mCommands = getResources().getStringArray(R.array.emacs_commands);
-        mFunctions = getResources().getStringArray(R.array.emacs_functions);
-        mSectionsIndices = getResources().getIntArray(R.array.section_indices);
+        mSections = getResources().getStringArray(R.array.linux_sections_titles);
+        mCommands = getResources().getStringArray(R.array.linux_commands);
+        mFunctions = getResources().getStringArray(R.array.linux_functions);
+        mSectionsIndices = getResources().getIntArray(R.array.linux_section_indices);
         mCommandsList = new ArrayList<>();
-        mColorResourceId = R.color.category_emacs;
+        mColorResourceId = R.color.category_linux;
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
@@ -50,7 +51,6 @@ public class EmacsFragment extends Fragment {
         listView.setAdapter(adapter);
 
         return rootView;
-
     }
 
     @Override
@@ -76,4 +76,5 @@ public class EmacsFragment extends Fragment {
         }
 
     }
+
 }

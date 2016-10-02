@@ -32,7 +32,13 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return new EmacsFragment();
+        if (position == 0) {
+            return new EmacsFragment();
+        } else if (position == 1) {
+            return new LinuxFragment();
+        } else {
+            return new OrgModeFragment();
+        }
     }
 
     @Override

@@ -38,7 +38,7 @@ public class CommandAdapter extends ArrayAdapter<Command> {
 
         TextView sectionTitleView = (TextView) listItemView.findViewById(R.id.section_title);
         if (currentCommand.hasSectionTitle()) {
-            sectionTitleView.setText(currentCommand.getmSectionTitle());
+            sectionTitleView.setText(currentCommand.getSectionTitle());
             sectionTitleView.setVisibility(View.VISIBLE);
 
 

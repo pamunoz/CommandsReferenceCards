@@ -66,7 +66,7 @@ public class Command {
         return mSectionTitle != NULL_TITLE;
     }
 
-    public String getmSectionTitle() {
+    public String getSectionTitle() {
         return mSectionTitle;
     }
 }
